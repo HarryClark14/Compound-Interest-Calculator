@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Compound Interest Calculator</title>
+  </head>
+  <body>
+    <header>
+      <h1>Compound Interest Calculator</h1>
+    </header>
+    <main>
+      <div class="form-container">
+        <form id="interest-form">
+          <label for="principal">Principal Amount:</label>
+          <input type="number" id="principal" step="0.01" required />
+          <label for="rate">Interest Rate (%):</label>
+          <input type="number" id="rate" step="0.01" required />
+          <label for="compounding">Compounding Frequency:</label>
+          <select id="compounding" required>
+            <option value="1">Annually</option>
+            <option value="2">Semi-Annually</option>
+            <option value="4">Quarterly</option>
+            <option value="12">Monthly</option>
+          </select>
+
+          <label for="years">Number of Years:</label>
+          <input type="number" id="years" step="0.01" required />
+          <button type="submit">Calculate</button>
+          <div id="result">
+              <p>Your investment will be worth: <span id="result-amount">$0.00</span></p>
+            </div>
+        </form>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <p>
+        Find the source code on
+        <a
+          href="https://codesandbox.io/s/cwhsxz"
+          >CodeSandbox</a
+        >.
+      </p>
+    </footer>
+    <script src="sketch.js"></script>
+  </body>
+</html>
